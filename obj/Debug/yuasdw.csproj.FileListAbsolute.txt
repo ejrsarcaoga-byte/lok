@@ -1,0 +1,10 @@
+C:\Users\1\Desktop\yuasdw\obj\Debug\yuasdw.csproj.AssemblyReference.cache
+C:\Users\1\Desktop\yuasdw\obj\Debug\yuasdw.Form1.resources
+C:\Users\1\Desktop\yuasdw\obj\Debug\yuasdw.Properties.Resources.resources
+C:\Users\1\Desktop\yuasdw\obj\Debug\yuasdw.csproj.GenerateResource.cache
+C:\Users\1\Desktop\yuasdw\obj\Debug\yuasdw.csproj.CoreCompileInputs.cache
+C:\Users\1\Desktop\yuasdw\bin\Debug\yuasdw.exe.config
+C:\Users\1\Desktop\yuasdw\bin\Debug\yuasdw.exe
+C:\Users\1\Desktop\yuasdw\bin\Debug\yuasdw.pdb
+C:\Users\1\Desktop\yuasdw\obj\Debug\yuasdw.exe
+C:\Users\1\Desktop\yuasdw\obj\Debug\yuasdw.pdb
