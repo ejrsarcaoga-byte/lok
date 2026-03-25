@@ -72,6 +72,7 @@
             this.tbUsername.Name = "tbUsername";
             this.tbUsername.Size = new System.Drawing.Size(136, 20);
             this.tbUsername.TabIndex = 3;
+            this.tbUsername.TextChanged += new System.EventHandler(this.tbUsername_TextChanged);
             // 
             // tbPassword
             // 
@@ -79,6 +80,7 @@
             this.tbPassword.Name = "tbPassword";
             this.tbPassword.Size = new System.Drawing.Size(136, 20);
             this.tbPassword.TabIndex = 4;
+            this.tbPassword.UseSystemPasswordChar = true;
             // 
             // label3
             // 

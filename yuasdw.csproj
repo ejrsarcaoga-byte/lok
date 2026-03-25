@@ -58,6 +58,42 @@
     <Compile Include="Form2.Designer.cs">
       <DependentUpon>Form2.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmTimeClock.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmTimeClock.Designer.cs">
+      <DependentUpon>frmTimeClock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmUser.Designer.cs">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmVendors.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmVendors.Designer.cs">
+      <DependentUpon>frmVendors.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmPricebook.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmPricebook.Designer.cs">
+      <DependentUpon>frmPricebook.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmStoreStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmStoreStatus.Designer.cs">
+      <DependentUpon>frmStoreStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegister.Designer.cs">
+      <DependentUpon>frmRegister.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmHome.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -69,6 +105,30 @@
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHome.resx">
+      <DependentUpon>frmHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmPricebook.resx">
+      <DependentUpon>frmPricebook.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegister.resx">
+      <DependentUpon>frmRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmStoreStatus.resx">
+      <DependentUpon>frmStoreStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmTimeClock.resx">
+      <DependentUpon>frmTimeClock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmUser.resx">
+      <DependentUpon>frmUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmVendors.resx">
+      <DependentUpon>frmVendors.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -77,6 +137,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -90,6 +151,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

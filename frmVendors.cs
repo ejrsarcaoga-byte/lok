@@ -10,14 +10,21 @@ using System.Windows.Forms;
 
 namespace yuasdw
 {
-    public partial class Form2 : Form
+    public partial class frmVendors : Form
     {
-        public Form2()
+        public frmVendors()
         {
             InitializeComponent();
         }
 
-        private void Form2_Load(object sender, EventArgs e)
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            frmHome frm = new frmHome();
+            this.Hide();
+            frm.Show();
+        }
+
+        private void label1_Click(object sender, EventArgs e)
         {
 
         }

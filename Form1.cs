@@ -22,7 +22,7 @@ namespace yuasdw
         {
             {"admin", "cashier", "Admin User" },
             {"admin", "password", "Admin User" },
-            {"Ellaine Sarcaoga", "Xian Nicole", "Ellaine Sarcaoga" },
+            {"Ellaine Sarcaoga", "Xian Nicole", "Yanyan Ramil" },
             {"Admin Department", "Staff Department", "Admin Staff" }
         };
 
@@ -67,6 +67,11 @@ namespace yuasdw
                     }
                 }
             }
+        }
+
+        private void tbUsername_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

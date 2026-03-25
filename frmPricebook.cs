@@ -10,16 +10,18 @@ using System.Windows.Forms;
 
 namespace yuasdw
 {
-    public partial class Form2 : Form
+    public partial class frmPricebook : Form
     {
-        public Form2()
+        public frmPricebook()
         {
             InitializeComponent();
         }
 
-        private void Form2_Load(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
+            frmHome frm = new frmHome();
+            this.Hide();
+            frm.Show();
         }
     }
 }

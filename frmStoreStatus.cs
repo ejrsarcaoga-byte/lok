@@ -10,16 +10,18 @@ using System.Windows.Forms;
 
 namespace yuasdw
 {
-    public partial class Form2 : Form
+    public partial class frmStoreStatus : Form
     {
-        public Form2()
+        public frmStoreStatus()
         {
             InitializeComponent();
         }
 
-        private void Form2_Load(object sender, EventArgs e)
+        private void btnBack_Click(object sender, EventArgs e)
         {
-
+            frmHome frm = new frmHome();
+            this.Hide();
+            frm.Show();
         }
     }
 }
