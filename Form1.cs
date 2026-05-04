@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace yuasdw
 {
@@ -17,6 +18,7 @@ namespace yuasdw
             InitializeComponent();
         }
 
+        MyDatabase db = new MyDatabase();
 
         string[,] userCredentials =
         {
@@ -28,44 +30,45 @@ namespace yuasdw
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            if (db.TestConnection() == true)
+            {
+                MessageBox.Show("Connected to DataBase");
+            }
+            else
+            {
+                MessageBox.Show("Database Connection Failed");
+            }
         }
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
             if (tbUsername.Text == "")
             {
-                MessageBox.Show("Please enter username.", "Username Required.");
+                MessageBox.Show("Please enter username.", "Validation");
                 tbUsername.Focus();
             }
             else if (tbPassword.Text == "")
             {
-                MessageBox.Show("Please enter password.", "Password Required.");
+                MessageBox.Show("Please enter password.", "Validation");
                 tbPassword.Focus();
             }
             else
             {
+                string query = "SELECT * FROM tbllogincredentials where user_username = @username and user_password = @password";
+                DataTable dt = db.ExecuteReturnQuery(query,
+                    new MySqlParameter("@username", tbUsername.Text),
+                    new MySqlParameter("@password", tbPassword.Text));
 
-                for (int x = 0; x < userCredentials.GetLength(0); x++)
+                if(dt.Rows.Count == 1)
                 {
-                    if (userCredentials[0, x] == tbUsername.Text)
-                    {
-                        if (userCredentials[1, x] == tbPassword.Text)
-                        {
-                        MessageBox.Show("Welcome " + userCredentials[2, x] + " from " + userCredentials[3, x]);
-                frmHome frm = new frmHome();
-                this.Hide();
-                frm.Show();
-                break;
-            }
-        }
-
-                    else
-                    {
-                        MessageBox.Show("Invalid username/password.", "Login Failed");
-                        break;
-                    }
+                    frmHome frm = new frmHome();
+                    this.Hide();
+                    frm.Show();
                 }
+                else
+                {
+                    MessageBox.Show("Invalid Username / Password!");
+                }    
             }
         }
 
