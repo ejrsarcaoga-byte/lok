@@ -15,13 +15,19 @@ namespace yuasdw
         public frmPricebook()
         {
             InitializeComponent();
+            this.FormClosing += frmPricebook_FormClosing;
+
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void frmPricebook_FormClosing(object sender, FormClosingEventArgs e)
         {
-            frmHome frm = new frmHome();
-            this.Hide();
-            frm.Show();
+            frmHome home = new frmHome();
+            home.Show();
+        }
+
+        private void frmPricebook_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using MySql.Data.MySqlClient;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace yuasdw
 {
@@ -54,7 +55,12 @@ namespace yuasdw
             }
             else
             {
-                string query = "SELECT * FROM tbllogincredentials where user_username = @username and user_password = @password";
+                string query = @"
+                SELECT *
+                FROM tbllogincredentials 
+                WHERE user_username = @username 
+                AND user_password = @password 
+                AND is_active = 1";
                 DataTable dt = db.ExecuteReturnQuery(query,
                     new MySqlParameter("@username", tbUsername.Text),
                     new MySqlParameter("@password", tbPassword.Text));

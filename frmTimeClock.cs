@@ -15,14 +15,14 @@ namespace yuasdw
         public frmTimeClock()
         {
             InitializeComponent();
+            this.FormClosing += frmTimeClock_FormClosing;
+        }
+        private void frmTimeClock_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            frmHome home = new frmHome();
+            home.Show();
         }
 
-        private void btnBack_Click(object sender, EventArgs e)
-        {
-            frmHome frm = new frmHome();
-            this.Hide();
-            frm.Show();
-        }
 
         private void frmTimeClock_Load(object sender, EventArgs e)
         {

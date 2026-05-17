@@ -15,6 +15,12 @@ namespace yuasdw
         public frmHome()
         {
             InitializeComponent();
+            this.FormClosing += frmHome_FormClosing;
+        }
+        private void frmHome_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Form1 login = new Form1();
+            login.Show();
         }
 
         private void frmHome_Load(object sender, EventArgs e)

@@ -15,21 +15,15 @@ namespace yuasdw
         public frmRegister()
         {
             InitializeComponent();
+            this.FormClosing += frmRegister_FormClosing;
+        }
+        private void frmRegister_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            frmHome home = new frmHome();
+            home.Show();
         }
 
         private void frmRegister_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            frmHome frm = new frmHome();
-            this.Hide();
-            frm.Show();
-        }
-
-        private void label1_Click(object sender, EventArgs e)
         {
 
         }

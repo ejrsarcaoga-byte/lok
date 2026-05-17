@@ -52,3 +52,28 @@ C:\Users\PCU GUEST\Documents\wewq\bin\Debug\System.Numerics.Vectors.dll
 C:\Users\PCU GUEST\Documents\wewq\bin\Debug\System.Buffers.dll
 C:\Users\PCU GUEST\Documents\wewq\bin\Debug\MySql.Data.xml
 C:\Users\PCU GUEST\Documents\wewq\obj\Debug\yuasdw.csproj.Up2Date
+C:\Users\hp_\Documents\wqeeeq\bin\Debug\yuasdw.exe.config
+C:\Users\hp_\Documents\wqeeeq\bin\Debug\yuasdw.exe
+C:\Users\hp_\Documents\wqeeeq\bin\Debug\yuasdw.pdb
+C:\Users\hp_\Documents\wqeeeq\bin\Debug\System.Memory.dll
+C:\Users\hp_\Documents\wqeeeq\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\hp_\Documents\wqeeeq\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\hp_\Documents\wqeeeq\bin\Debug\System.Buffers.dll
+C:\Users\hp_\Documents\wqeeeq\bin\Debug\MySql.Data.xml
+C:\Users\hp_\Documents\wqeeeq\obj\Debug\yuasdw.csproj.AssemblyReference.cache
+C:\Users\hp_\Documents\wqeeeq\obj\Debug\yuasdw.exe.config
+C:\Users\hp_\Documents\wqeeeq\obj\Debug\yuasdw.Form1.resources
+C:\Users\hp_\Documents\wqeeeq\obj\Debug\yuasdw.Form2.resources
+C:\Users\hp_\Documents\wqeeeq\obj\Debug\yuasdw.frmHome.resources
+C:\Users\hp_\Documents\wqeeeq\obj\Debug\yuasdw.frmPricebook.resources
+C:\Users\hp_\Documents\wqeeeq\obj\Debug\yuasdw.frmRegister.resources
+C:\Users\hp_\Documents\wqeeeq\obj\Debug\yuasdw.frmStoreStatus.resources
+C:\Users\hp_\Documents\wqeeeq\obj\Debug\yuasdw.frmTimeClock.resources
+C:\Users\hp_\Documents\wqeeeq\obj\Debug\yuasdw.frmUser.resources
+C:\Users\hp_\Documents\wqeeeq\obj\Debug\yuasdw.frmVendors.resources
+C:\Users\hp_\Documents\wqeeeq\obj\Debug\yuasdw.Properties.Resources.resources
+C:\Users\hp_\Documents\wqeeeq\obj\Debug\yuasdw.csproj.GenerateResource.cache
+C:\Users\hp_\Documents\wqeeeq\obj\Debug\yuasdw.csproj.CoreCompileInputs.cache
+C:\Users\hp_\Documents\wqeeeq\obj\Debug\yuasdw.csproj.Up2Date
+C:\Users\hp_\Documents\wqeeeq\obj\Debug\yuasdw.exe
+C:\Users\hp_\Documents\wqeeeq\obj\Debug\yuasdw.pdb

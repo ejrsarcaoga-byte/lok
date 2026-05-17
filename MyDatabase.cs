@@ -11,8 +11,9 @@ using MySql.Data.MySqlClient;
 namespace yuasdw
 {
     internal class MyDatabase
+
     {
-        string connectionString = "Server=localhost;Port=3306;Database='sarcaoga_db';Uid='root';Pwd=''";
+        string connectionString ="Server=localhost;Port=3306;Database=sarcaoga_db;Uid=root;Pwd=;Allow User Variables=True;Allow Batch=True;";
 
         public bool TestConnection()
         {
@@ -65,6 +66,40 @@ namespace yuasdw
             }
         }
 
+        public object ExecuteScalar(string query, params MySqlParameter[] parameters)
+        {
+            object result = null;
+
+            using (MySqlConnection con = new MySqlConnection(connectionString))
+            {
+                MySqlCommand command = new MySqlCommand(query, con);
+
+                if (parameters != null)
+                {
+                    foreach (MySqlParameter param in parameters)
+                    {
+                        command.Parameters.Add(param);
+                    }
+                }
+
+                try
+                {
+                    con.Open();
+                    result = command.ExecuteScalar();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Execution failed: " + ex.Message);
+                }
+                finally
+                {
+                    con.Close();
+                }
+            }
+
+            return result;
+        }
+
         public DataTable ExecuteReturnQuery(string query, params MySqlParameter[] parameters)
         {
             using (MySqlConnection con = new MySqlConnection(connectionString))
@@ -98,3 +133,5 @@ namespace yuasdw
         }
     }
 }
+
+

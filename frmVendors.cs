@@ -15,16 +15,16 @@ namespace yuasdw
         public frmVendors()
         {
             InitializeComponent();
+            this.FormClosing += frmVendors_FormClosing;
         }
-
-        private void btnBack_Click(object sender, EventArgs e)
+        private void frmVendors_FormClosing(object sender, FormClosingEventArgs e)
         {
-            frmHome frm = new frmHome();
-            this.Hide();
-            frm.Show();
+            frmHome home = new frmHome();
+            home.Show();
         }
 
-        private void label1_Click(object sender, EventArgs e)
+
+        private void frmVendors_Load(object sender, EventArgs e)
         {
 
         }

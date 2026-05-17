@@ -15,13 +15,20 @@ namespace yuasdw
         public frmStoreStatus()
         {
             InitializeComponent();
+            this.FormClosing += FrmStoreStatus_FormClosing;
         }
 
-        private void btnBack_Click(object sender, EventArgs e)
+        private void FrmStoreStatus_FormClosing(object sender, FormClosingEventArgs e)
         {
-            frmHome frm = new frmHome();
-            this.Hide();
-            frm.Show();
+            frmHome home = new frmHome();
+            home.Show();
+        }
+
+
+
+        private void frmStoreStatus_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
