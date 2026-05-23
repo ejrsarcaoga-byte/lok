@@ -162,6 +162,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="DBBackup\tbllogincredentials.sql" />
+    <Content Include="DBBackup\tbluserinformation.sql" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
